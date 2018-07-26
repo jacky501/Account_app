@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context="org.atctech.sms_accountant.fragment.ExpenseFragment">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/expenseAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_black_24dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:background="@drawable/round_corner_border_color"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenditure"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#2196F3"
+        android:layout_gravity="center_horizontal"/>
+
+   <LinearLayout
+       android:padding="10dp"
+       android:gravity="center"
+       android:background="@drawable/round_corner_border_color"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:background="@drawable/boarder_background"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp">
+
+               <TextView
+                   android:textColor="#30cf4d"
+                   android:gravity="center"
+                   android:textAlignment="center"
+                   android:background="@drawable/boarder_background"
+                   android:layout_marginLeft="1dp"
+                   android:layout_width="80dp"
+                   android:layout_height="45dp"
+                   android:text="Select"
+                   android:textSize="17sp"
+                   android:fontFamily="sans-serif-smallcaps"/>
+
+
+               <RelativeLayout
+                   android:layout_marginLeft="25dp"
+                   android:layout_width="200dp"
+                   android:layout_height="50dp"
+                   android:background="@drawable/boarder_background"
+                   android:orientation="horizontal">
+
+                   <Spinner
+                       android:id="@+id/spinnerExpenseList"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@android:color/transparent"
+                       android:spinnerMode="dropdown"/>
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_gravity="center"
+                       android:src="@drawable/drop" />
+
+               </RelativeLayout>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="11dp">
+
+               <TextView
+                   android:textColor="#e63ad4"
+                   android:gravity="center"
+                   android:textAlignment="center"
+                   android:background="@drawable/boarder_background"
+                   android:layout_marginLeft="1dp"
+                   android:layout_width="80dp"
+                   android:layout_height="47dp"
+                   android:text="Amount"
+                   android:textSize="17sp"
+                   android:fontFamily="sans-serif-smallcaps"/>
+
+
+               <RelativeLayout
+                   android:layout_marginLeft="25dp"
+                   android:layout_width="200dp"
+                   android:layout_height="50dp"
+                   android:background="@drawable/boarder_background"
+                   android:orientation="horizontal">
+
+                   <EditText
+                       android:id="@+id/expenseAmount"
+                       android:background="@drawable/boarder_background"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:hint="Amount"
+                       android:paddingLeft="10dp"/>
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/line_gray"/>
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center">
+
+
+               <Button
+                   android:id="@+id/expenseSubmitButton"
+                   android:textColor="#FFF"
+                   android:background="@drawable/button_style_green"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Submit"
+                   android:layout_gravity="center_horizontal"/>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</FrameLayout>

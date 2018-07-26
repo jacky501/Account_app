@@ -1,0 +1,294 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.atctech.sms_accountant.fragment.StudentFeesAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:fontFamily="casual"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Vikarunnisa Noon School \u0026 COllege"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:fontFamily="serif-monospace"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="1/A, New Baily Road, Dhaka - 1000"/>
+
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray"/>
+
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Fees Book"/>
+
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Bangla Version"/>
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Main Morning"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"/>
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siam"/>
+
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class :"/>
+
+            <TextView
+                android:id="@+id/studentClass"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nine"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@drawable/boarder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="23sp"
+                        android:layout_gravity="start"
+                        android:textColor="#33a5e7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHARGES"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_gray"/>
+
+                    <Spinner
+                        android:id="@+id/charges_spinner"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textColor="#a953c9"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/boarder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="23sp"
+                        android:layout_gravity="start"
+                        android:textColor="#33a5e7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FROM"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_gray"/>
+                    <Spinner
+                        android:id="@+id/chargesFrom"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textColor="#a953c9"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/boarder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="23sp"
+                        android:layout_gravity="start"
+                        android:textColor="#33a5e7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TO"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_gray"/>
+                    <Spinner
+                        android:id="@+id/chargesTo"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textColor="#a953c9"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray"/>
+
+            <EditText
+                android:id="@+id/chargesAmount"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ammount"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/formstyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray"/>
+
+            <EditText
+                android:id="@+id/chargesComment"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Comments"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/formstyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray"/>
+
+            <Button
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFF"
+                android:id="@+id/chargesSubmitBtn"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:background="@drawable/buttonstyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

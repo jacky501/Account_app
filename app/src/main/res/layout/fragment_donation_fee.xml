@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="org.atctech.sms_accountant.fragment.DonationFeeFragment">
+
+
+    <TextView
+        android:padding="18dp"
+        android:background="@drawable/round_corner_border_color"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donation Fee"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#2196F3"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@drawable/boarder_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/dName"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/formstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Institution Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_splash"/>
+
+            <EditText
+                android:id="@+id/dAmount"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/formstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_splash"/>
+
+            <EditText
+                android:id="@+id/dMobile"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/formstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_splash"/>
+
+            <Button
+                android:id="@+id/dSubmitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:textColor="#FFF"
+                android:background="@drawable/button_style_green"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
